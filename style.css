@@ -1,0 +1,50 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  margin-top: calc(150px - 18px);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  font-weight: 500;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #466fda;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button:not(.done):hover {
+  opacity: 0.8;
+}
+
+.button.done {
+  cursor: default;
+}
+
+p {
+  font-size: 18px;
+}
+
+img.emoji {
+  height: 1.4em;
+  width: 1.4em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
+}
